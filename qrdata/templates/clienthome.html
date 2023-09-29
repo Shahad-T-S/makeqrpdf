@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{% block content %}
+<style>
+    .stylebtn{
+        width:400px;
+        height:30px;
+        color:blue;
+    }
+    img{
+        width:500px;
+        height:500px;
+    }
+
+</style>
+<div>
+    <h1>welcome{{obj.username}}</h1>
+    <img src="{{obj.photo.url}}">
+    <button class="stylebtn" onclick="location.href='clientdata';">Client Data entry</button>
+</div>
+{%endblock%}
